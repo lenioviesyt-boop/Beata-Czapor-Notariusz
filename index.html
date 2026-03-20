@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beata Czapor - Kancelaria Notarialna Rzeszów</title>
+    <meta name="description" content="Kancelaria Notarialna w Rzeszowie (Śródmieście). Profesjonalna obsługa prawna, akty notarialne, poświadczenia. Sprawdź wymagane dokumenty i umów wizytę.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 
+                        brown: '#4a3320',      
+                        lightbrown: '#5c4430',
+                        customdark: '#4A3B2F', 
+                        gold: '#c5a059', 
+                        lightbg: '#f8fafc',
+                        paper: '#f3f4f6'
+                    },
+                    fontFamily: { 
+                        serif: ['"Playfair Display"', 'serif'], 
+                        sans: ['"Lora"', 'sans-serif'] 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in { animation: fadeIn 0.8s ease-in forwards; opacity: 0; }
+        @keyframes fadeIn { to { opacity: 1; } }
+        
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-lightbg text-gray-800 font-sans pb-16 md:pb-0">
+
+    <nav class="bg-brown shadow-2xl sticky top-0 z-50 border-b border-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center group">
+                        <img src="https://i.postimg.cc/jdBB758j/nagl3.png" alt="Logo Kancelarii" class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gold font-semibold tracking-wide text-sm uppercase">Strona główna</a>
+                    <a href="kontakt.html" class="text-gray-200 hover:text-gold transition font-semibold tracking-wide text-sm uppercase">Kontakt</a>
+                    <a href="o-kancelarii.html" class="text-gray-200 hover:text-gold transition font-semibold tracking-wide text-sm uppercase">Prawo o Notariacie</a>
+                    <a href="czynnosci.html" class="text-gray-200 hover:text-gold transition font-semibold tracking-wide text-sm uppercase">Czynności notarialne</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none" aria-label="Menu">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-[#3a2818] border-t border-gold/30 absolute w-full shadow-lg">
+            <div class="px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gold block text-sm font-semibold uppercase tracking-wide">Strona główna</a>
+                <a href="kontakt.html" class="text-gray-200 hover:text-gold block text-sm font-semibold uppercase tracking-wide">Kontakt</a>
+                <a href="o-kancelarii.html" class="text-gray-200 hover:text-gold block text-sm font-semibold uppercase tracking-wide">Prawo o Notariacie</a>
+                <a href="czynnosci.html" class="text-gray-200 hover:text-gold block text-sm font-semibold uppercase tracking-wide">Czynności notarialne</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-cover bg-center fade-in min-h-screen flex flex-col justify-center" style="background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-white/50 backdrop-blur-[1px]"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-serif font-bold text-brown mb-4 drop-shadow-sm">
+                    Kancelaria Notarialna
+                </h1>
+                <h2 class="text-3xl md:text-4xl font-serif text-lightbrown drop-shadow-sm">
+                    Beata Czapor Notariusz Rzeszów
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="pl-4 border-l-2 border-gold/50">
+                    <h2 class="text-[32px] font-serif text-customdark font-bold mb-8">
+                        O Kancelarii
+                    </h2>
+                    
+                    <div class="text-[#333333] text-[18px] leading-[1.9] max-w-[800px] space-y-5">
+                        <p>
+                            <b>Nazywam się Beata Czapor i jestem notariuszem z wieloletnim doświadczeniem.</b> Moim priorytetem jest zapewnienie pełnego bezpieczeństwa obrotu prawnego oraz transparentności w relacjach z Klientami.
+                        </p>
+                        <p>
+                            Działając jako osoba zaufania publicznego, dbam o to, by każda czynność – od prostego poświadczenia po złożone akty notarialne – była wykonana z najwyższą precyzją i zgodnie z obowiązującym prawem. Zapewniam profesjonalne wsparcie zarówno dla osób prywatnych, jak i przedsiębiorców z Rzeszowa i okolic.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center lg:justify-end">
+                    <div class="absolute inset-0 bg-gold/10 transform translate-x-4 translate-y-4 z-0 max-w-md ml-auto"></div>
+                    
+                    <div class="relative z-10 w-full max-w-md shadow-xl aspect-[4/5] bg-gray-100 flex flex-col items-center justify-center border-2 border-dashed border-gray-300 text-gray-500 rounded">
+                        <span class="font-medium text-xl text-brown tracking-wide">Miejsce na zdjęcie</span>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-paper py-24 border-t border-gray-200 relative overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16">
+                <div class="text-center md:text-left mb-8 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-serif text-brown font-bold mb-4">Czynności notarialne</h2>
+                    <div class="w-20 h-1 bg-gold mx-auto md:mx-0 rounded-full"></div>
+                </div>
+                <a href="czynnosci.html" class="bg-brown text-white font-bold py-3.5 px-8 rounded border border-brown hover:bg-white hover:text-brown transition-all duration-300 shadow-md hover:shadow-lg uppercase text-sm tracking-wide">
+                    Zobacz wszystkie czynności
+                </a>
+            </div>
+            
+            <button onclick="scrollServices(-1)" class="absolute left-2 md:-left-6 top-[55%] -translate-y-1/2 bg-white hover:bg-gold text-brown hover:text-white shadow-xl rounded-full p-2 md:p-4 z-20 transition-all border border-gray-100 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+
+            <div id="services-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar gap-4 md:gap-8 pb-12 pt-4 px-12 md:px-2">
+            </div>
+
+            <button onclick="scrollServices(1)" class="absolute right-2 md:-right-6 top-[55%] -translate-y-1/2 bg-white hover:bg-gold text-brown hover:text-white shadow-xl rounded-full p-2 md:p-4 z-20 transition-all border border-gray-100 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </section>
+
+    <section class="bg-white py-24 border-t border-b border-gray-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif text-brown font-bold mb-4">Zaufanie naszych Klientów</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+            
+            <button onclick="scrollReviews(-1)" class="absolute left-2 md:-left-5 top-[60%] -translate-y-1/2 bg-paper hover:bg-gold text-brown hover:text-white shadow-lg rounded-full p-2 md:p-3 z-10 transition border border-gray-100 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+
+            <div id="reviews-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar gap-4 md:gap-6 pb-8 pt-4 px-12 md:px-2">
+            </div>
+
+            <button onclick="scrollReviews(1)" class="absolute right-2 md:-right-5 top-[60%] -translate-y-1/2 bg-paper hover:bg-gold text-brown hover:text-white shadow-lg rounded-full p-2 md:p-3 z-10 transition border border-gray-100 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </section>
+
+    <section class="bg-paper py-20 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-serif text-brown font-bold mb-4">Lokalizacja Kancelarii</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="w-full rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white p-2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.5853444066897!2d22.005078776690926!3d50.03786521698482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfafd919effa5%3A0xd647df5e6fae1c14!2sBeata%20Czapor%20-%20notariusz%20Rzesz%C3%B3w!5e0!3m2!1spl!2spl!4v1773940275433!5m2!1spl!2spl" class="w-full h-[450px] rounded-lg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brown text-white py-10 border-t border-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            
+            <p class="text-sm text-gray-300 tracking-wide text-center mb-5">
+                © 2026 Kancelaria Notarialna Beata Czapor. Wszelkie prawa zastrzeżone.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-gray-400 font-semibold uppercase tracking-wider">
+                <a href="index.html" class="hover:text-gold transition">Strona główna</a>
+                <a href="kontakt.html" class="hover:text-gold transition">Kontakt</a>
+                <a href="o-kancelarii.html" class="hover:text-gold transition">Prawo o Notariacie</a>
+                <a href="czynnosci.html" class="hover:text-gold transition">Czynności notarialne</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-brown text-white flex md:hidden z-50 shadow-t">
+        <a href="tel:+48178525020" class="flex-1 text-center py-4 border-r border-[#5c4430] flex justify-center items-center gap-2 hover:bg-[#3a2818] transition">
+            <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            Zadzwoń
+        </a>
+        <a href="https://maps.google.com/?q=ul.+Adama+Mickiewicza+19,+35-064+Rzeszów" target="_blank" class="flex-1 text-center py-4 flex justify-center items-center gap-2 hover:bg-[#3a2818] transition">
+            <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            Wyznacz trasę
+        </a>
+    </div>
+
+    <script>
+        const servicesData = [
+            { title: "Umowy spółek oraz akty założycielskie spółek z o.o. i akcyjnych" },
+            { title: "Umowy działu spadku" },
+            { title: "Umowa darowizny" },
+            { title: "Testamenty" },
+            { title: "Umowy sprzedaży (deweloperskie)" },
+            { title: "Umowy przedwstępne i warunkowe sprzedaży" },
+            { title: "Egzekucje w tym do umowy najmu okazjonalnego" },
+            { title: "Pełnomocnictwa" },
+            { title: "Ustanawiania hipoteki" },
+            { title: "Walne zgromadzenia wspólników" },
+            { title: "Przekształcenia spółek" },
+            { title: "Akty Notarialne" },
+            { title: "Ustanawiania służebności gruntowych oraz osobistych" },
+            { title: "Akty poświadczenia dziedziczenia" }
+        ];
+
+        const reviewsData = [
+            { name: "Małgorzata Przystas", text: "Pani Notariusz Kobieta to wyjątkowa profesjonalistka, która wyróżnia się nie tylko ogromnym doświadczeniem, ale także wyjątkowym podejściem do klienta." },
+            { name: "Natasza Fiertek", text: "Beata Czapor to profesjonalny i rzetelny notariusz. Moje doświadczenia z jej usługami były wyjątkowo pozytywne. Zapewniła mi kompleksową obsługę." },
+            { name: "Marek Gacek", text: "Pani Beata to nie tylko profesjonalistka w swojej dziedzinie, ale także osoba zaangażowana i pomocna. Z łatwością zrozumiała moje potrzeby." },
+            { name: "Michał Ociec", text: "Zdecydowanie najlepsza kancelaria notarialna! Polecam Panią Beatę za profesjonalizm w pracy oraz wsparcie prawne i ludzkie." },
+            { name: "Aleksandra R.", text: "Miałam przyjemność korzystać z usług p. Beaty podczas zakupu nieruchomości. Dużym plusem jest sympatyczny kontakt oraz elastyczne podejście. Polecam." },
+            { name: "Adam M. Rubin", text: "Wysokiej klasy notariusz z Rzeszowa. Do wszystkiego podchodzi ze starannością i uważnością. Mocno wyróżnia się na tle innych notariuszy." },
+            { name: "MERRY Małgosia Wieczorek", text: "Pani notariusz Beata jest bardzo skrupulatna w swojej pracy. Wytłumaczyła mi krok po kroku każdy proces, rozwiewa powstałe wątpliwości." },
+            { name: "Monika Grabowska", text: "Notariusz wyjaśniła wszelkie szczegóły, szybko załatwiła sprawy. Pani dokłada starań, aby procedury były zrozumiałe dla klienta." },
+            { name: "Wojtek Rubik", text: "Polecam. Notariusz z Rzeszowa, który potrafi znaleźć szybko rozwiązanie na każdy dylemat a przede wszystkim daje zawsze skuteczne rozwiązania." },
+            { name: "Rafał Pyrzyński", text: "Specjalistyczna wiedza pani notariusz, jasny sposób przekazu dla laika oraz świetny kontakt." },
+            { name: "Julita Marczak", text: "Wszelkie wątpliwości zostały wyjaśnione, Pani Notariusz nie zostawiła żadnego mojego pytania bez odpowiedzi. Profesjonalna współpraca." },
+            { name: "Justyna Czenczek", text: "Polecam baardzo :) Profesjonalna, ciepła i bardzo pozytywna osoba." },
+            { name: "Andrzej Kwiecień", text: "Profesjonalnie, dokładnie i sympatycznie. Polecam serdecznie." }
+        ];
+
+        /* OBSŁUGA MENU MOBILNEGO */
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        /* TWORZENIE KAFELKÓW CZYNNOŚCI */
+        const servicesContainer = document.getElementById('services-carousel');
+        servicesData.forEach((service) => {
+            const card = document.createElement('div');
+            card.className = "snap-center shrink-0 w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-21.33px)] bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-gold/30 hover:shadow-[0_10px_30px_rgba(197,160,89,0.15)] transition-all duration-500 group relative overflow-hidden min-h-[260px] flex flex-col justify-center items-center text-center transform hover:-translate-y-2 cursor-default";
+            
+            card.innerHTML = `
+                <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-gold/30 via-gold to-gold/30 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></div>
+                <div class="relative z-10 w-16 h-16 mb-6 rounded-2xl bg-paper border border-gold/20 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white group-hover:rotate-6 transition-all duration-500 shadow-sm">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="relative z-10 text-xl font-serif text-customdark font-bold leading-snug transition-colors duration-300 px-2">${service.title}</h3>
+            `;
+            servicesContainer.appendChild(card);
+        });
+
+        function scrollServices(direction) {
+            const cardWidth = servicesContainer.querySelector('div').offsetWidth;
+            const gap = window.innerWidth >= 768 ? 32 : 16;
+            servicesContainer.scrollBy({ left: direction * (cardWidth + gap), behavior: 'smooth' });
+        }
+
+        let servicesInterval;
+        const startServices = () => {
+            if(!servicesInterval) {
+                servicesInterval = setInterval(() => {
+                    if(servicesContainer.scrollLeft + servicesContainer.offsetWidth >= servicesContainer.scrollWidth - 10) {
+                        servicesContainer.scrollTo({left: 0, behavior: 'smooth'});
+                    } else {
+                        scrollServices(1);
+                    }
+                }, 5000);
+            }
+        };
+        const stopServices = () => { clearInterval(servicesInterval); servicesInterval = null; };
+
+        /* TWORZENIE KART OPINII */
+        const reviewsContainer = document.getElementById('reviews-carousel');
+        reviewsData.forEach(review => {
+            const card = document.createElement('div');
+            card.className = "snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-paper p-8 rounded-lg shadow-sm border border-gray-200 flex flex-col min-h-[250px]";
+            card.innerHTML = `
+                <div class="text-gold flex gap-1 mb-4">
+                    ${'<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>'.repeat(5)}
+                </div>
+                <p class="text-gray-600 italic mb-6 leading-relaxed flex-grow">„${review.text}”</p>
+                <div>
+                    <p class="font-bold text-brown">${review.name}</p>
+                    <p class="text-xs text-gray-500">Opinia z Google</p>
+                </div>
+            `;
+            reviewsContainer.appendChild(card);
+        });
+
+        function scrollReviews(direction) {
+            const cardWidth = reviewsContainer.querySelector('div').offsetWidth;
+            const gap = window.innerWidth >= 768 ? 24 : 16;
+            reviewsContainer.scrollBy({ left: direction * (cardWidth + gap), behavior: 'smooth' });
+        }
+
+        let reviewsInterval;
+        const startReviews = () => {
+            if(!reviewsInterval) {
+                reviewsInterval = setInterval(() => {
+                    if(reviewsContainer.scrollLeft + reviewsContainer.offsetWidth >= reviewsContainer.scrollWidth - 10) {
+                        reviewsContainer.scrollTo({left: 0, behavior: 'smooth'});
+                    } else {
+                        scrollReviews(1);
+                    }
+                }, 4000);
+            }
+        };
+        const stopReviews = () => { clearInterval(reviewsInterval); reviewsInterval = null; };
+
+        /* INTERSECTION OBSERVER - URUCHAMIANIE KARUZELI DOPIERO GDY JEST NA EKRANIE */
+        const observerOptions = { threshold: 0.2 };
+        
+        const carouselsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.target.id === 'services-carousel') {
+                    entry.isIntersecting ? startServices() : stopServices();
+                }
+                if(entry.target.id === 'reviews-carousel') {
+                    entry.isIntersecting ? startReviews() : stopReviews();
+                }
+            });
+        }, observerOptions);
+
+        carouselsObserver.observe(servicesContainer);
+        carouselsObserver.observe(reviewsContainer);
+
+        /* ZATRZYMYWANIE KARUZELI PRZY DOTKNIĘCIU / NAJECHANIU */
+        servicesContainer.addEventListener('touchstart', stopServices, {passive: true});
+        servicesContainer.addEventListener('touchend', startServices, {passive: true});
+        servicesContainer.addEventListener('mouseenter', stopServices);
+        servicesContainer.addEventListener('mouseleave', startServices);
+
+        reviewsContainer.addEventListener('touchstart', stopReviews, {passive: true});
+        reviewsContainer.addEventListener('touchend', startReviews, {passive: true});
+        reviewsContainer.addEventListener('mouseenter', stopReviews);
+        reviewsContainer.addEventListener('mouseleave', startReviews);
+    </script>
+</body>
+</html>
