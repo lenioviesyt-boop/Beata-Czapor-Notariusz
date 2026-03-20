@@ -61,10 +61,19 @@
                 </div>
 
                 <div class="md:hidden flex items-center">
-                    <button class="text-white focus:outline-none" aria-label="Menu">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none" aria-label="Menu">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </button>
                 </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-[#3a2818] border-t border-gold/30 absolute w-full shadow-lg z-40">
+            <div class="px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-200 hover:text-gold block text-sm font-semibold uppercase tracking-wide">Strona główna</a>
+                <a href="kontakt.html" class="text-gray-200 hover:text-gold block text-sm font-semibold uppercase tracking-wide">Kontakt</a>
+                <a href="o-kancelarii.html" class="text-gold block text-sm font-semibold uppercase tracking-wide">Prawo o Notariacie</a>
+                <a href="czynnosci.html" class="text-gray-200 hover:text-gold block text-sm font-semibold uppercase tracking-wide">Czynności notarialne</a>
             </div>
         </div>
     </nav>
@@ -170,11 +179,11 @@
                     4) osób, które co najmniej przez trzy lata zajmowały stanowisko radcy Prokuratorii Generalnej Skarbu Państwa.</p>
                     <p>§ 2. Do złożenia egzaminu notarialnego przed komisją, o której mowa w art. 71b § 1, bez obowiązku odbycia aplikacji notarialnej, mogą przystąpić:<br>
                     1) doktorzy nauk prawnych,<br>
-                    2) osoby, które po ukończeniu wyższych studiów prawniczych były zatrudnione na podstawie umowy o pracę na stanowiskach związanych ze stosowaniem lub tworzeniem prawa przez okres co najmniej 5 lat w okresie nie dłuższym niż 8 lat przed złożeniem wniosku o dopuszczenie do egzaminu notarialnego,<br>
-                    3) osoby, które po ukończeniu wyższych studiów prawniczych wykonywały osobiście, w sposób ciągły na podstawie umów, do których stosuje się przepisy o zleceniu, usługi polegające na stosowaniu lub tworzeniu prawa przez okres co najmniej 5 lat w okresie nie dłuższym niż 8 lat przed złożeniem wniosku o dopuszczenie do egzaminu notarialnego,<br>
-                    4) osoby, które po ukończeniu wyższych studiów prawniczych prowadziły, przez okres co najmniej 5 lat w okresie nie dłuższym niż 8 lat przed złożeniem wniosku o dopuszczenie do egzaminu notarialnego, działalność gospodarczą wpisaną do Ewidencji Działalności Gospodarczej, jeżeli przedmiot tej działalności obejmował świadczenie pomocy prawnej, w rozumieniu ustawy z dnia 26 maja 1982 r. – Prawo o adwokaturze (Dz. U. z 2002 r. Nr 123, poz. 1058, z późn. zm.) lub ustawy z dnia 6 lipca 1982 r. o radcach prawnych (Dz. U. z 2002 r. Nr 123, poz. 1059, z późn. zm.),<br>
-                    5) osoby, które pracowały przez okres co najmniej 5 lat w okresie nie dłuższym niż 8 lat, na stanowisku referendarza sądowego lub asystenta sędziego,<br>
-                    6) osoby, które zdały egzamin sędziowski, prokuratorski, adwokacki lub radcowski w zakresie, w którym ustawowo określony przedmiot zdanego przez nich egzaminu jest różny od zakresu prawa określonego w art. 71b § 3.</p>
+                    2) osób, które po ukończeniu wyższych studiów prawniczych były zatrudnione na podstawie umowy o pracę na stanowiskach związanych ze stosowaniem lub tworzeniem prawa przez okres co najmniej 5 lat w okresie nie dłuższym niż 8 lat przed złożeniem wniosku o dopuszczenie do egzaminu notarialnego,<br>
+                    3) osób, które po ukończeniu wyższych studiów prawniczych wykonywały osobiście, w sposób ciągły na podstawie umów, do których stosuje się przepisy o zleceniu, usługi polegające na stosowaniu lub tworzeniu prawa przez okres co najmniej 5 lat w okresie nie dłuższym niż 8 lat przed złożeniem wniosku o dopuszczenie do egzaminu notarialnego,<br>
+                    4) osób, które po ukończeniu wyższych studiów prawniczych prowadziły, przez okres co najmniej 5 lat w okresie nie dłuższym niż 8 lat przed złożeniem wniosku o dopuszczenie do egzaminu notarialnego, działalność gospodarczą wpisaną do Ewidencji Działalności Gospodarczej, jeżeli przedmiot tej działalności obejmował świadczenie pomocy prawnej, w rozumieniu ustawy z dnia 26 maja 1982 r. – Prawo o adwokaturze (Dz. U. z 2002 r. Nr 123, poz. 1058, z późn. zm.) lub ustawy z dnia 6 lipca 1982 r. o radcach prawnych (Dz. U. z 2002 r. Nr 123, poz. 1059, z późn. zm.),<br>
+                    5) osób, które pracowały przez okres co najmniej 5 lat w okresie nie dłuższym niż 8 lat, na stanowisku referendarza sądowego lub asystenta sędziego,<br>
+                    6) osób, które zdały egzamin sędziowski, prokuratorski, adwokacki lub radcowski w zakresie, w którym ustawowo określony przedmiot zdanego przez nich egzaminu jest różny od zakresu prawa określonego w art. 71b § 3.</p>
                     <p>§ 3. Pięcioletni okres zatrudnienia w ramach stosunku pracy, o którym mowa w § 2 pkt 2, ustala się jako sumę okresów pracy obliczonych z zachowaniem proporcjonalności ich wymiaru.</p>
                     <p>§ 4. Osoby, o których mowa w § 2, muszą spełniać wymagania przewidziane w art. 11 pkt 1-3 i 7.</p>
                     
@@ -231,7 +240,7 @@
                     
                     <p><strong>Art. 22.</strong> W wypadku zaprzestania prowadzenia kancelarii przez notariusza z innych powodów niż jego śmierć lub zawieszenia go w czynnościach, rada izby notarialnej może wyznaczyć czasowo do pełnienia obowiązków notariusza zastępcę spośród asesorów notarialnych danej izby.</p>
                     
-                    <p><strong>Art. 23.</strong> Notariusze opłacają, na potrzeby organów samorządu notarialnego, składki miesięczne, których wysokość ustala corocznie Krajowa Rada Notarialna. Ponadto, stosownie do uchwał właściwych izb notarialnych, notariusze opłacają składki na inne określone cele.</p>
+                    <p><strong>Art. 23.</strong> Notariusze opłacają, na potrzeby organów samorządu notarialnego, składowi miesięczne, których wysokość ustala corocznie Krajowa Rada Notarialna. Ponadto, stosownie do uchwał właściwych izb notarialnych, notariusze opłacają składki na inne określone cele.</p>
                     
                     <p><strong>Art. 24.</strong> W zakresie ubezpieczeń społecznych do notariuszy i członków ich rodzin stosuje się przepisy ustawy o ubezpieczeniu społecznym osób prowadzących działalność gospodarczą.</p>
                     
@@ -454,7 +463,7 @@
                     <p>§ 2. W skład zespołu konkursowego wchodzi 5 osób, w tym 3 przedstawicieli Ministra Sprawiedliwości oraz 2 przedstawicieli delegowanych przez Krajową Radę Notarialną.</p>
                     <p>§ 3. Przewodniczący zespołu konkursowego, wyznaczony przez Ministra Sprawiedliwości spośród jego przedstawicieli, kieruje pracami zespołu oraz określa tryb pracy zespołu.</p>
                     <p>§ 4. Zespół konkursowy przygotowuje jeden zestaw pytań w formie testu wyboru na egzamin konkursowy dla kandydatów.</p>
-                    <p>§ 5. Każda rada izby notarialnej może zgłosić zespołowi konkursowemu, za pośrednictwem przewodniczącego zespołu, propozycję pytań.</p>
+                    <p>§ 5. Każda rada izby notarialnej może zgłosić zespołowi konkursowemu, za pośrednictwem przewodniczącego zespołu, propozyję pytań.</p>
                     <p>§ 6. Zespół konkursowy sporządza zestaw pytań na potrzebę egzaminu konkursowego, mając na uwadze konieczność zapewnienia jednakowego poziomu sprawdzenia wiedzy kandydatów.</p>
                     <p>§ 7. Minister Sprawiedliwości, po zasięgnięciu opinii Krajowej Rady Notarialnej, określi, w drodze rozporządzenia, sposób zgłaszania propozycji pytań, przygotowywania, przechowywania oraz przekazywania komisjom pytań na egzamin konkursowy, mając na uwadze konieczność zabezpieczenia tych pytań przed ich nieuprawnionym ujawnieniem.</p>
                     
@@ -692,7 +701,7 @@
                     1) dzień, miesiąc i rok sporządzenia aktu, a w razie potrzeby lub na żądanie strony – godzinę i minutę rozpoczęcia i podpisania aktu,<br>
                     2) miejsce sporządzenia aktu,<br>
                     3) imię, nazwisko i siedzibę kancelarii notariusza, a jeżeli akt sporządził zastępca notariusza – nadto imię i nazwisko zastępcy,<br>
-                    4) imiona, nazwiska, imiona rodziców i miejsce zamieszkania osób fizycznych, nazwę i siedzibę osób prawnych lub innych podmiotów biorących udział w akcie, imiona, nazwiska i miejsce zamieszkania osób działających w imieniu osób prawnych, ich przedstawicieli lub pełnomocników, a także innych osób obecnych przy sporządzaniu aktu,<br>
+                    4) imiona, nazwiska, imiona rodziców i miejsce zamieszkania osób fizycznych, nazwę i siedzibę osób prawnych lub innych podmiotów biorących udział w akcie, imiona, nazwiska i miejsce zamieszkania osób działających w imieniu osób prawnych, njihov przedstawicieli lub pełnomocników, a także innych osób obecnych przy sporządzaniu aktu,<br>
                     5) oświadczenia stron, z powołaniem się w razie potrzeby na okazane przy akcie dokumenty,<br>
                     6) stwierdzenie, na żądanie stron, faktów i istotnych okoliczności, które zaszły przy spisywaniu aktu,<br>
                     7) stwierdzenie, że akt został odczytany, przyjęty i podpisany,<br>
@@ -707,7 +716,7 @@
                     <p><strong>Art. 93.</strong> Jeżeli akt notarialny jest sporządzony na dwóch lub więcej arkuszach, to arkusze te powinny być ponumerowane, parafowane i połączone.</p>
                     
                     <p><strong>Art. 94.</strong> § 1. Akt notarialny przed podpisaniem powinien być odczytany przez notariusza lub przez inną osobę w jego obecności. Przy odczytaniu aktu notariusz powinien się przekonać, że osoby biorące udział w czynności dokładnie rozumieją treść oraz znaczenie aktu, a akt jest zgodny z ich wolą. Na żądanie powinny być odczytane również załączniki do aktu.</p>
-                    <p>§ 2. Wszelkie wywabiania i wyskrobywania są niedopuszczalne; wolne miejsca powinny być przekreślone, a poprawki należy omówić na końcu aktu przed złożeniem podpisu przez osoby biorące udział w czynności lub przed złożeniem podpisu przez notariusza, jeżeli poprawka dotyczy aktu niepodpisywanego przez strony. Zbędne wyrazy albo ich części powinny być przekreślone w ten sposób, aby można je było odczytać, a przekreślenia te należy na końcu aktu omówić przed złożeniem podpisów. Przekreślenia nieomówione uważa się za niedokonane.</p>
+                    <p>§ 2. Wszelkie wywabiania i wyskrobywania są niedopuszczalne; wolne miejsca powinny być przekreślone, a poprawki należy omówić na końcu aktu przed złożeniem podpisu przez osoby biorące udział w czynności lub przed złożeniem podpisu przez notariusza, jeżeli poprawka dotyczy aktu niepodpisywanego przez stron. Zbędne wyrazy albo ich części powinny być przekreślone w ten sposób, aby można je było odczytać, a przekreślenia te należy na końcu aktu omówić przed złożeniem podpisów. Przekreślenia nieomówione uważa się za niedokonane.</p>
                     
                     <p><strong>Art. 95.</strong> Oryginały aktów notarialnych nie mogą być wydawane poza miejsce ich przechowywania.</p>
                     
@@ -809,5 +818,15 @@
         </a>
     </div>
 
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
 </body>
 </html>
